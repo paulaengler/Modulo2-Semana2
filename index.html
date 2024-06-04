@@ -1,0 +1,108 @@
+<!-- 
+Ex 1 - Criando uma Página Web Simples
+Objetivo: Criar uma página HTML simples com título, parágrafo e lista.
+Instruções:
+Crie um arquivo index.html.
+Adicione um título com a tag <h1>.
+Adicione um parágrafo com a tag <p>.
+Adicione uma lista não ordenada com pelo menos 3 itens usando a tag <ul>.  
+    
+[M2S02] Ex 2 - Estilizando a Página Web
+Objetivo: Adicionar estilos básicos à página HTML criada no exercício 1 usando CSS.
+Instruções:
+Crie um arquivo styles.css.
+Importe o arquivo CSS no arquivo HTML.
+Adicione estilos para o título, parágrafo e itens da lista (como cores, fontes e margens).
+
+[M2S02] Ex 3 - Implementando um Formulário de Contato
+Objetivo: Criar um formulário de contato simples com HTML e CSS.
+Instruções:
+Adicione um formulário <form> no arquivo HTML com campos para nome, email e mensagem.
+Adicione botões para enviar e limpar o formulário.
+Estilize o formulário usando CSS para torná-lo visualmente atraente
+
+/* required - necessário preencher para poder enviar */
+O hover em CSS é um pseudoclass que aplica estilos adicionais a um elemento quando o usuário passa o cursor do mouse sobre ele. 
+Ele é comumente usado para criar efeitos interativos em botões, links, imagens e outros elementos da interface do usuário
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2 - Semana 2</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div>
+        <h1>Exerícios do módulo 2 - semana 2</h1>
+    <p>Resolução dos exercícios</p>
+    <li>
+        <ul> item 1 </ul>
+        <ul> item 2 </ul>
+        <ul> item 3 </ul>
+    </li>    
+    </div>
+
+    <div class="container">
+        <h1>Formulário de contato</h1>
+        <form id="formularioContato">
+            <div class="form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="3"></textarea>
+            </div>
+            <div class="form-botoes">
+                <button type="enviar">Enviar</button>
+                <button type="limpar">Limpar</button>
+            </div>
+        </form>
+
+        <script>
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const mensagem = document.getElementById('mensagem').value;
+
+            console.log('Nome:', nome);
+            console.log('Email:', email);
+            console.log('Mensagem:', mensagem);
+        </script>
+    </div>
+</body>
+</html>
+
+
+
+<!-- 
+M2S02] Ex 4 - Instalação e Configuração do Git
+Instale e configure o Git para poder fazer clone e publicação de projetos no computador.
+
+[M2S02] Ex 5 - Clonando um projeto
+Objetivo: Praticar o clone de um repositório Git.
+Instruções:
+Escolha um repositório público no GitHub.
+Utilize o comando git clone para clonar o repositório em seu computador.
+Abra os arquivos clonados em seu editor de código.
+
+[M2S02] Ex 6 - Fazendo Commits e Push
+Objetivo: Praticar o processo de fazer commits e enviar para o GitHub.
+Instruções:
+Adicione uma nova funcionalidade ou faça uma modificação nos arquivos do repositório clonado.
+Faça commit das mudanças com uma mensagem clara.
+Utilize git push para enviar as mudanças para o repositório no GitHub.
+
+[M2S02] Ex 7 - Colaborando em um Projeto
+Objetivo: Simular a colaboração em um projeto usando Git e GitHub.
+Instruções:
+Crie um repositório no GitHub e compartilhe com um colega.
+Ambos devem fazer modificações e commits no repositório.
+Resolva possíveis conflitos de merge que possam surgir. 
+-->
